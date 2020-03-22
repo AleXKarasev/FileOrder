@@ -21,6 +21,11 @@ jobs:
       run: dotnet build --configuration Release
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
-      with:       
-        name: FileOrder
+      with:
+        name: FileOrder .net Core
         path: bin/Release/netcoreapp3.1/
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: FileOrder .net472
+        path: bin/Release/net472/

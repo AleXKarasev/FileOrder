@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFrameworks>net472;netcoreapp3.1</TargetFrameworks>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
-
   <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
     <PackageReference Include="Caliburn.Micro" Version="4.0.105-alpha" />
   </ItemGroup>
 
